@@ -1,0 +1,37 @@
+{
+  "name": "express-holding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node dist/index.js",
+    "start": "babel-watch src && npm run build",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "mysql2": "^2.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "sql-template-strings": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.6.2",
+    "@babel/runtime": "^7.7.2",
+    "babel-preset-minify": "^0.5.1",
+    "babel-watch": "^7.0.0",
+    "debug": "^4.1.1",
+    "nodemon": "^1.19.2"
+  }
+}
